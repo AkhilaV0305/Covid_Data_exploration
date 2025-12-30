@@ -1,48 +1,85 @@
-project:
-  name: "COVID-19 Data Exploration (SQL)"
+# 🦠 COVID-19 Data Exploration – SQL Analysis Project
 
-usage:
-  steps:
-    - Clone or download this repository
-    - Open the SQL script in SQL Server Management Studio (SSMS)
-    - Connect to the database containing COVID-19 datasets
-    - Run queries step by step to explore insights
+---
 
-analysis_performed:
-  - Data cleaning and filtering using continent IS NOT NULL
-  - Case vs death analysis to calculate death percentages
-  - Population impact analysis to measure infection rates
-  - Country and continent level death comparisons
-  - Global COVID-19 statistics calculation
-  - Vaccination progress analysis using rolling totals
+## 📌 Project Overview
+This project explores global COVID-19 data using SQL to analyze infection rates, death counts, and vaccination progress across countries and continents.  
 
-business_value:
-  - Understand the global impact of COVID-19
-  - Identify countries with high infection and death rates
-  - Track vaccination progress over time
-  - Support data-driven public health decisions
+The goal is to demonstrate strong skills in **data cleaning, analysis, aggregation, and reporting**, producing datasets ready for visualization.
 
-skills_demonstrated:
-  - SQL Joins
-  - Common Table Expressions (CTEs)
-  - Temporary Tables
-  - Window Functions (OVER, PARTITION BY)
-  - Aggregate Functions (SUM, MAX)
-  - Data Type Conversion (CAST, CONVERT)
-  - Creating SQL Views
+---
 
-tools_used:
-  - Microsoft SQL Server
-  - SQL Server Management Studio (SSMS)
+## 🎯 Objectives
+- Analyze infection and death trends by country and continent  
+- Identify countries with the highest infection and death rates relative to population  
+- Track vaccination progress over time  
+- Build reusable SQL queries, CTEs, and views for structured analysis  
+- Prepare datasets for visualization in Power BI or Tableau  
 
-author:
-  name: "Akhila Vitta"
-  degree: "Master’s in Data Science"
-  roles:
-    - Data Analyst
-    - Data Engineer
+---
 
-future_enhancements:
-  - Build interactive dashboards in Power BI or Tableau
-  - Add time-series trend analysis
-  - Compare vaccination rates with case and death trends
+## 📊 Dataset Description
+
+**CovidDeaths**  
+- Location, Continent, Date  
+- Total cases, New cases  
+- Total deaths, New deaths  
+- Population  
+
+**CovidVaccinations**  
+- Location, Date  
+- New vaccinations  
+
+---
+
+## 🛠 Tools & Technologies
+- Microsoft SQL Server  
+- SQL Server Management Studio (SSMS)  
+
+**SQL Techniques:**  
+- Joins (INNER, LEFT)  
+- Common Table Expressions (CTEs)  
+- Window Functions (`OVER`, `PARTITION BY`)  
+- Aggregate Functions (`SUM`, `MAX`)  
+- Data Type Conversion (`CAST`, `CONVERT`)  
+- Creating Views  
+
+---
+
+## 🔄 Data Preparation
+- Filtered aggregated rows using `continent IS NOT NULL`  
+- Converted death and vaccination counts to numeric types  
+- Calculated rolling vaccination totals per country using window functions  
+- Standardized column names and cleaned missing values  
+
+---
+
+## 📈 Analysis Features
+- **Case & Death Analysis:** Total cases vs total deaths per country, calculated death percentage  
+- **Population Impact:** Percentage of population infected, ranked countries by infection rate  
+- **Death Count Analysis:** Total deaths per country, aggregated deaths by continent  
+- **Vaccination Analysis:** Rolling cumulative vaccinations, percentage of population vaccinated  
+- **Global Metrics:** Global new cases, global new deaths, global death percentage  
+
+---
+
+## 💡 Key Insights
+- Countries with high infection rates may not always have the highest death rates  
+- Vaccination rollout trends vary across continents  
+- Population size affects relative infection and death percentages  
+- Rolling totals provide better insight into vaccination progress  
+
+---
+
+## 👤 Author
+**Akhila Vitta**  
+Master’s in Data Science  
+Data Analyst | Data Engineer  
+
+---
+
+## 🚀 Future Enhancements
+- Build interactive dashboards in Power BI or Tableau  
+- Add time-series trend analysis  
+- Compare vaccination rates with case and death trends  
+- Incorporate additional health metrics for deeper insights  
