@@ -1,78 +1,48 @@
 project:
   name: "COVID-19 Data Exploration (SQL)"
 
-overview:
-  - Analyze global COVID-19 data using SQL
-  - Study infection rates, death counts, and vaccination progress
-  - Perform country-level and continent-level analysis
+usage:
+  steps:
+    - Clone or download this repository
+    - Open the SQL script in SQL Server Management Studio (SSMS)
+    - Connect to the database containing COVID-19 datasets
+    - Run queries step by step to explore insights
 
-skills_used:
+analysis_performed:
+  - Data cleaning and filtering using continent IS NOT NULL
+  - Case vs death analysis to calculate death percentages
+  - Population impact analysis to measure infection rates
+  - Country and continent level death comparisons
+  - Global COVID-19 statistics calculation
+  - Vaccination progress analysis using rolling totals
+
+business_value:
+  - Understand the global impact of COVID-19
+  - Identify countries with high infection and death rates
+  - Track vaccination progress over time
+  - Support data-driven public health decisions
+
+skills_demonstrated:
   - SQL Joins
   - Common Table Expressions (CTEs)
   - Temporary Tables
   - Window Functions (OVER, PARTITION BY)
   - Aggregate Functions (SUM, MAX)
   - Data Type Conversion (CAST, CONVERT)
-  - Creating Views
+  - Creating SQL Views
 
-datasets:
-  CovidDeaths:
-    - Location
-    - Date
-    - Total cases
-    - New cases
-    - Total deaths
-    - Population
-  
-  CovidVaccinations:
-    - Location
-    - Date
-    - New vaccinations
-
-analysis_performed:
-  data_cleaning:
-    - Filtered aggregated rows using continent IS NOT NULL
-    - Focused only on country-level data
-
-  case_vs_death_analysis:
-    - Compared total cases with total deaths
-    - Calculated death percentage per country
-
-  population_impact:
-    - Calculated percentage of population infected
-    - Identified countries with highest infection rates
-
-  death_count_analysis:
-    - Ranked countries by total deaths
-    - Analyzed death counts by continent
-
-  global_numbers:
-    - Calculated total global cases
-    - Calculated total global deaths
-    - Computed global death percentage
-
-  vaccination_analysis:
-    - Joined CovidDeaths and CovidVaccinations tables
-    - Calculated rolling vaccination totals
-    - Measured percentage of population vaccinated
-
-sql_techniques_used:
-  - INNER JOIN and LEFT JOIN
-  - Window functions with PARTITION BY
-  - CTEs for structured queries
-  - Temporary tables for intermediate storage
-  - Views for reusable analysis
-
-output:
-  - Clean datasets ready for visualization
-  - Country-level and continent-level insights
-  - Suitable for Power BI or Tableau dashboards
-
-tools:
+tools_used:
   - Microsoft SQL Server
   - SQL Server Management Studio (SSMS)
 
-next_steps:
-  - Build interactive dashboards
-  - Add time-series analysis
-  - Compare vaccination rates with deaths
+author:
+  name: "Akhila Vitta"
+  degree: "Master’s in Data Science"
+  roles:
+    - Data Analyst
+    - Data Engineer
+
+future_enhancements:
+  - Build interactive dashboards in Power BI or Tableau
+  - Add time-series trend analysis
+  - Compare vaccination rates with case and death trends
