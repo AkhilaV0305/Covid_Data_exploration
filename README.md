@@ -23,6 +23,7 @@ datasets:
     - New cases
     - Total deaths
     - Population
+  
   CovidVaccinations:
     - Location
     - Date
